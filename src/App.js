@@ -2,16 +2,16 @@ import './App.css'
 import HomePage from './pages/HomePage'
 import { Navbar } from 'react-bootstrap'
 import {Switch, HashRouter, Route} from 'react-router-dom';
+import BreedPage from './pages/BreedPage';
+
+
 function App() {
   return (
-      <header className="App-header">
-      
-      
+    <div className="root">  
       <Navbar>
         <Navbar.Brand href="/">Home</Navbar.Brand>
         <Navbar.Brand href="#/breeds">Breeds</Navbar.Brand>
-        {/* <Navbar.Brand href="#/breeds/id/dogs">Actors</Navbar.Brand> */}
-        <Navbar.Toggle />
+        <Navbar.Brand href="#/breeds">Dogs</Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
         </Navbar.Collapse>
       </Navbar>
@@ -24,12 +24,13 @@ function App() {
             </div>
           </Route>
           
-          <Route exact path="/breeds"><BreedsPage/></Route>
+          <Route exact path="/breeds"><BreedPage/></Route>
           
-          <Route exact path="/breeds/id/dogs"><DogsPage/></Route>
+          {/* <Route exact path="/breeds/id/dogs"><DogsPage/></Route> */}
         </Switch>
       </HashRouter>
-      </header>
+      
+    </div>  
 
   );
 }
