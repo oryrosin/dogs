@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 2em;
+    max-width: 200px;
+    height: 300px;
+    border: brown solid;
+    background-color: rgb(217, 228, 248);
+}
+.card-img-top{
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 90%; 
+    max-height: 260px;
+}
+.card-text{
+    text-align: center; 
+    
+}
