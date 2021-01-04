@@ -1,6 +1,8 @@
 .container{
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(213, 223, 223);
+    justify-content: center;
 }
 
 .card{
@@ -9,8 +11,8 @@
     margin: 1em;
     width: 200px;
     height: 200px;
-    border: brown solid;
-    background-color: rgb(217, 228, 248);
+    border: black 1px solid;
+    
 }
 .card-img-top{
     margin :8px;
@@ -20,6 +22,7 @@
     flex-grow: 8;
 }
 .card-text{
+    font-family: fantasy;
     margin: 2px;
     text-align: center; 
     flex-grow: 2;
