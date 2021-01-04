@@ -4,19 +4,24 @@
 }
 
 .card{
-    margin: 2em;
-    max-width: 200px;
-    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em;
+    width: 200px;
+    height: 200px;
     border: brown solid;
     background-color: rgb(217, 228, 248);
 }
 .card-img-top{
-    margin-top: 10px;
-    margin-left: 5%;
+    margin :8px;
+    margin: auto;
     width: 90%; 
-    max-height: 260px;
+    max-height: 160px;
+    flex-grow: 8;
 }
 .card-text{
+    margin: 2px;
     text-align: center; 
+    flex-grow: 2;
     
 }
